@@ -14,7 +14,7 @@ module "eks_blueprints" {
   managed_node_groups = {
     default = {
       node_group_name = "default"
-      instance_types  = ["m5.xlarge"]
+      instance_types  = ["t2.micro"]
       min_size        = 1
       max_size        = 5
       desired_size    = 3
